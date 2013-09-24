@@ -3,15 +3,15 @@
    License: none (public domain)
 */
 
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe,
+h1,h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+caption,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
@@ -23,16 +23,16 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
- HTML5 display-role reset for older browsers 
+ /*HTML5 display-role reset for older browsers*/ 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+/*body {
 	line-height: 1;
-}
+}*/
 ol, ul {
-	list-style: none;
+	ist-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -42,31 +42,53 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
+able {
 	border-collapse: collapse;
 	border-spacing: 0;
-}*/
-
-body{
-    background-color:red;
 }
 
+body{
+    background-color:grey;
+}
+
+
+
 #container{
-    width:1200px;
-    height:260px;
-    background-color:red;
+    padding: 5px;
+    margin: auto;
+    width: 1200px;
+    background-color:white;
+    
 }
 
 #header {
-    
+    border: solid 1px black;
+    height: 50px;
+    padding: 15px 0 0 20px;
 }
 
 #navigation {
+    border: solid 1px black;
     position: relative;
     float: left;
-    width: 50px;
+    width: 100px;
+    height: 90px;
+    margin-top: 20px;
+    padding: 10px 0 0 30px;
+}
+
+#content {
+    position: relative;
+    float:left;
+    border: solid 1px black;
+    padding: 15px 20px 15px 40px ;
 }
 
 #footer {
-    
+    height: 50px;
+    width:1200px;
+    border: solid 1px black;
+    clear:left;
 }
+
+

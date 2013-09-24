@@ -5,60 +5,68 @@
 <head>
     <meta charset="utf-8" />
     <title>Kontakt</title>
+    <link rel="stylesheet"  href="../css/style.css" type="text/css">
 </head>
     
 <body>
-    
-    <h1>Kontakt</h1>
-    <ul>
-        <li><a href="../index.html">Index</a></li>
-        <li><a href="laborationer.html">Laborationer</a></li>
-        <li><a href="presentation.html">Presentation</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-    
-    <form id="form" name="form" method="post" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
+    <div id="container">
+        <div id="header">
+            <h1>Kontakt</h1>
+        </div>
+        <div id="navigation">    
+            <ul>
+                <li><a href="../index.html">Index</a></li>
+                <li><a href="laborationer.html">Laborationer</a></li>
+                <li><a href="presentation.html">Presentation</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
         
-        <fieldset style="width: 350px;"> 
-        
-        <legend>Formulär för att kontakta oss!</legend>
-        
-        <label for="select">
-            Ärendetyp: </label>
-            
-            
-            <select name="arendetyp" id="arendetyp">
-                <option>Välj Ärende</option>
-                <option value>Fråga</option>
-                <option value>Kommentar</option>
-            </select>
-            <br />
-        
-        
-        Rubrik: 
-        <input type="text" name="rubrik" id="rubrik" /> <br />
-        
-        Meddelande: 
-        <textarea name="meddelande" id="meddelande"> </textarea>
-        <br />
-        </fieldset>
-        
-        <fieldset style="width: 200px;"> 
-        
-        <legend>Information om dig!</legend>
-        
-        <input type="checkbox" name="kontakt[]" id="mobil" value="mobil"/>
-        <label for="mobil">Kontakta mig via mobil</label><br />
-        
-        <input type="checkbox" name="kontakt[]" id="mail" value="mail"/>
-        <label for="mail">Kontakta mig via e-post</label><br />
-        
-        </fiedlset>
-        <input type="submit" name="skicka" id="skicka" value="Skicka" />
-        
-    </form>
-    
-    
+        <div id="content">
+            <form id="form" name="form" method="post" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
+                
+                <fieldset style="width: 350px;"> 
+                
+                <legend>Formulär för att kontakta oss!</legend>
+                
+                <label for="arendetyp">
+                    Ärendetyp: </label>
+                    
+                    
+                    <select name="arendetyp" id="arendetyp">
+                        <option>Välj Ärende</option>
+                        <option value>Fråga</option>
+                        <option value>Kommentar</option>
+                    </select>
+                    <br />
+                
+                
+                Rubrik: 
+                <input type="text" name="rubrik" id="rubrik" /> <br />
+                
+                Meddelande: 
+                <textarea name="meddelande" id="meddelande"> </textarea>
+                <br />
+                </fieldset>
+                
+                <fieldset style="width: 200px;"> 
+                
+                <legend>Information om dig!</legend>
+                
+                <input type="checkbox" name="kontakt[]" id="mobil" value="mobil"/>
+                <label for="mobil">Kontakta mig via mobil</label><br />
+                
+                <input type="checkbox" name="kontakt[]" id="mail" value="mail"/>
+                <label for="mail">Kontakta mig via e-post</label><br />
+                
+                </fieldset>
+                <input type="submit" name="skicka" id="skicka" value="Skicka" />
+            </form>
+        </div>
+        <div id="footer">
+            <p> Ansvarig för materialet på denna sida är Oscar Magnfält</p>
+        </div> 
+    </div>
 </body>
     
 </html>
