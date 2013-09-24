@@ -9,8 +9,8 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+/*dl, dt, dd,*/ ol, ul, li,
+/*fieldset*/ form, label, /*legend*/
 caption,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 	line-height: 1;
 }*/
 ol, ul {
-	ist-style: none;
+	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -42,52 +42,102 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-able {
-	border-collapse: collapse;
-	border-spacing: 0;
+table {
+	border-collaps: collapse;
+	border-spacig: 0;
 }
 
 body{
     background-color:grey;
 }
 
+/*h1-h6*/
+h1 {
+    font-weight:bold;
+    font-size:30px;
+}
 
+h2 {
+    font-weight:bold;
+    font-size:20px;
+}
+
+.menu li, .menu ul, .menu ol {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*DIVar*/
 
 #container{
     padding: 5px;
     margin: auto;
     width: 1200px;
-    background-color:white;
+    background-color:#39AECF;
+    overflow:auto;
+}
+
+/*FÄRGSCHEMA på colorschemedesigner.com/#1821Tw0w0w0w0*/
+
+#header {
+    color:#216477;
+    background-color:#FF8100;
+    border: solid 5px #FFBA73;
+    height: 50px;
+    padding: 15px 0 0 20px;
     
 }
 
-#header {
-    border: solid 1px black;
-    height: 50px;
-    padding: 15px 0 0 20px;
+#navigation li {
+    margin: 5px;
 }
 
+#navigation a:link{
+    color:#216477;
+    display:block;
+    background-color:#FF8100;
+}
+
+#navigation a:visited {
+    color:#216477;
+}
+
+#navigation a:hover{
+    background-color:#216477;
+    display:block;
+    color:#FF8100;
+}
+
+
 #navigation {
-    border: solid 1px black;
+    background-color:#FFBA73;
     position: relative;
     float: left;
-    width: 100px;
-    height: 90px;
-    margin-top: 20px;
-    padding: 10px 0 0 30px;
+    width: 150px;
+    height: 110px;
+    margin-top: 10px;
 }
 
 #content {
+    background-color:white;
     position: relative;
     float:left;
-    border: solid 1px black;
-    padding: 15px 20px 15px 40px ;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 15px 20px 15px 20px;
+    min-height: 600px;
+    margin-bottom: 10px;
 }
 
 #footer {
+    color:#216477;
+    background-color:#FF8100;
+    border: solid 5px #FFBA73;
     height: 50px;
-    width:1200px;
-    border: solid 1px black;
     clear:left;
 }
 
