@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-/*dl, dt, dd,*/ ol, ul, li,
+/*dl, dt, dd, ol, ul, li,*/
 /*fieldset*/ form, label, /*legend*/
 caption,
 article, aside, canvas, details, embed, 
@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 /*body {
 	line-height: 1;
 }*/
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -51,7 +49,7 @@ body{
     background-color:grey;
 }
 
-/*h1-h6*/
+/*h1-h6?*/
 h1 {
     font-weight:bold;
     font-size:30px;
@@ -59,16 +57,36 @@ h1 {
 
 h2 {
     font-weight:bold;
-    font-size:20px;
+    font-size:25px;
+    margin: 10px 0;
 }
 
-.menu li, .menu ul, .menu ol {
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+h3 {
+    font-weight:bold;
+    font-size:20px;
+    margin: 10px 0;
+}
+
+h4 {
+    font-weight:bold;
+    font-size:17px;
+    margin: 10px 0;
+}
+
+/*listor*/
+
+ul, ol, li, dl, dd, dt {
+    margin-top:5px;
+    padding: 5px;
+}
+
+ul li ul, ul li {
+    margin-left: 20px;
+}
+
+
+p {
+    margin:10px 0 0 0;
 }
 
 /*DIVar*/
@@ -93,7 +111,9 @@ h2 {
 }
 
 #navigation li {
-    margin: 5px;
+    padding: 0;
+    margin: 0 0 5px 0;
+    list-style:none;
 }
 
 #navigation a:link{
@@ -118,10 +138,13 @@ h2 {
     position: relative;
     float: left;
     width: 150px;
-    height: 110px;
+    height: 115px;
     margin-top: 10px;
 }
 
+#content ol{
+    padding-left:30px;
+}
 #content {
     background-color:white;
     position: relative;
