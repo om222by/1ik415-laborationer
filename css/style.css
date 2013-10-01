@@ -28,9 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-/*body {
-	line-height: 1;
-}*/
 
 blockquote, q {
 	quotes: none;
@@ -64,7 +61,8 @@ h2 {
 h3 {
     font-weight:bold;
     font-size:20px;
-    margin: 10px 0;
+    margin: 15px 0 10px 0;
+    border-bottom: 1px black solid;
 }
 
 h4 {
@@ -73,20 +71,42 @@ h4 {
     margin: 10px 0;
 }
 
+h5 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 /*listor*/
 
 ul, ol, li, dl, dd, dt {
     margin-top:5px;
     padding: 5px;
+    font-style: normal;
+}
+
+ul li a, ol li a {
+    font-weight: normal;
 }
 
 ul li ul, ul li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
+dl dt, ul li {
+    font-weight: bold;
+    font-family:Arial;
+}
+
+ul li ul li, dl dt dd {
+    font-weight: normal;
+}
 
 p {
-    margin:10px 0 0 0;
+    margin:10px 0;
+}
+
+a {
+    font-style: italic;
 }
 
 
@@ -115,9 +135,13 @@ p {
     padding: 0;
     margin: 0 0 5px 0;
     list-style:none;
+    font-weight: normal;
+    font-family:none;
 }
 
 #navigation a:link{
+    font-style: normal;
+    padding: 0 5px;
     color:#216477;
     display:block;
     background-color:#FF8100;
@@ -138,7 +162,7 @@ p {
     background-color:#FFBA73;
     position: relative;
     float: left;
-    width: 150px;
+    width: 125px;
     height: 115px;
     margin-top: 10px;
 }
@@ -152,6 +176,7 @@ p {
     padding-left:30px;
 }
 #content {
+    
     background-color:white;
     position: relative;
     float:left;
@@ -163,12 +188,20 @@ p {
     width:700px;
 }
 
+.sign {
+    text-align:right;
+    font-style: italic;
+    font-family: Comic sans ms;
+    font-size: small;
+}
+
+
 #footer {
     color:#216477;
     background-color:#FF8100;
     border: solid 5px #FFBA73;
     height: 50px;
-    padding: 15px;
+    padding-top: 15px;
     font-weight:bold;
     text-align: center;
     clear:left;
