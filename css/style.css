@@ -62,7 +62,9 @@ h3 {
     font-weight:bold;
     font-size:20px;
     margin: 15px 0 10px 0;
+    padding: 0 0 0 30px;
     border-bottom: 1px black solid;
+    background: url("pics/omc-logga-mini.png") top left no-repeat;
 }
 
 h4 {
@@ -106,6 +108,20 @@ ul li ul li, dl dd{
 p {
     margin:10px 0;
     font-size: large;
+    position: relative;
+}
+
+.left {
+    position:relative;
+    margin: 10px;
+    float: left;
+    border: solid black 1px;
+}
+
+.right {
+    margin: 10px;
+    float: right;
+    border: solid black 1px;
 }
 
 a {
@@ -125,13 +141,23 @@ a {
 
 /*FÄRGSCHEMA på colorschemedesigner.com/#1821Tw0w0w0w0*/
 
+
+
 #header {
     color:#216477;
-    background-color:#FF8100;
     border: solid 5px #FFBA73;
     height: 50px;
-    padding: 15px 0 0 20px;
-    
+    padding: 15px 0 0 15px;
+    background-color: #FF8100;
+}
+
+#headerimg {
+     margin: -18px 5px 0 -10px;
+     borde: solid 1px black;
+     width: 80px;
+     height: 70px;
+     float: left;
+     background:url("pics/omc-logga-xs.png")  top left no-repeat
 }
 
 #navigation li {
@@ -195,6 +221,7 @@ a {
     font-style: italic;
     font-family: Comic sans ms;
     font-size: small;
+    clear: both;
 }
 
 
