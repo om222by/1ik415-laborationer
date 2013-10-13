@@ -5,12 +5,10 @@
 
 html, body, div, span, applet, object, iframe,
 h1,h2, h3, h4, h5, h6, p, blockquote, pre,
-/*a*/ abbr, acronym, address, big, cite, code,
+abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-/*dl, dt, dd, ol, ul, li,*/
-/*fieldset*/ form, label, /*legend*/
+b, u, i, center, form, label, /*legend*/
 caption,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -32,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -44,23 +43,24 @@ table {
 
 body{
     background-color:grey;
+    font-family: Georgia;
 }
 
 /*h1-h6?*/
 h1 {
     font-weight:bold;
-    font-size:30px;
+    font-size:30pt;
 }
 
 h2 {
     font-weight:bold;
-    font-size:25px;
+    font-size:25pt;
     margin: 10px 0;
 }
 
 h3 {
     font-weight:bold;
-    font-size:20px;
+    font-size:20pt;
     margin: 15px 0 10px 0;
     padding: 0 0 0 30px;
     border-bottom: 1px black solid;
@@ -69,7 +69,7 @@ h3 {
 
 h4 {
     font-weight:bold;
-    font-size:17px;
+    font-size:17pt;
     margin: 10px 0;
 }
 
@@ -79,6 +79,10 @@ h5 {
 }
 
 /*listor*/
+
+#content ol{
+    padding-left:30px;
+}
 
 ul, ol, li, dl, dd, dt {
     margin-top:5px;
@@ -123,9 +127,24 @@ p {
 }
 
 a {
-    font-style: italic;
+    color: #0000cc; 
+    text-decoration: underline;
 }
 
+a:link { 
+    color: #0000cc; 
+    text-decoration: underline;
+} 
+
+a:visited { 
+    color: #0000cc; 
+    text-decoration: underline;
+}
+
+a:link:after, a:visited:after { 
+	content: " (" attr(href) ") "; 
+	font-size: 90%; 
+}
 
 /*tabell1*/
 
@@ -141,10 +160,10 @@ th, td {
 
 thead, tbody, tfoot {
     background: #FF8100;
-    
     padding: 5px;
 }
 
+/*FÄRGSCHEMA på colorschemedesigner.com/#1821Tw0w0w0w0*/
 
 /*DIVar*/
 
@@ -156,10 +175,6 @@ thead, tbody, tfoot {
     overflow:auto;
 }
 
-/*FÄRGSCHEMA på colorschemedesigner.com/#1821Tw0w0w0w0*/
-
-
-
 #header {
     color:#216477;
     border: solid 5px #FFBA73;
@@ -169,7 +184,7 @@ thead, tbody, tfoot {
 }
 
 #headerimg {
-     margin: -18px 5px 0 -10px;
+     margin: -15px 5px 0 -10px;
      borde: solid 1px black;
      width: 80px;
      height: 60px;
@@ -203,8 +218,8 @@ thead, tbody, tfoot {
     color:#FF8100;
 }
 
-
 #navigation {
+    display: none;
     background-color:#FFBA73;
     position: relative;
     float: left;
@@ -218,9 +233,6 @@ thead, tbody, tfoot {
     text-align: right;
 }
 
-#content ol{
-    padding-left:30px;
-}
 #content {
     background-color:white;
     position: relative;
@@ -260,7 +272,6 @@ fieldset {
     font-size: small;
     clear: both;
 }
-
 
 #footer {
     color:#216477;
