@@ -37,14 +37,15 @@
                     
                     <select name="arendetyp" id="arendetyp">
                         <option>Välj Ärende</option>
-                        <option value>Fråga</option>
-                        <option value>Kommentar</option>
+                        <option name="fraga" id="fraga" value>Fråga</option>
+                        <option name="kommentar" "kommentar" value>Kommentar</option>
                     </select>
                     <br />
                 
                 
                 Rubrik: 
                 <input type="text" name="rubrik" id="rubrik" /> <br />
+                
                 
                 Meddelande: 
                 <textarea name="meddelande" id="meddelande"> </textarea>
@@ -57,9 +58,13 @@
                 
                 <input type="checkbox" name="kontakt[]" id="mobil" value="mobil"/>
                 <label for="mobil">Kontakta mig via mobil</label><br />
-                
+                Mobilnummer:
+                <input type="text" name="mobilnummer" id="mobilnummer"> <br />
+                <br>
                 <input type="checkbox" name="kontakt[]" id="mail" value="mail"/>
                 <label for="mail">Kontakta mig via e-post</label><br />
+                E-post: 
+                <input type="text" name="epost" id="epost"> <br />
                 
                 </fieldset>
                 <input type="submit" name="skicka" id="skicka" value="Skicka" />

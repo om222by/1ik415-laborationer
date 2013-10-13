@@ -115,17 +115,34 @@ p {
     position:relative;
     margin: 10px;
     float: left;
-    border: solid black 1px;
 }
 
 .right {
     margin: 10px;
     float: right;
-    border: solid black 1px;
 }
 
 a {
     font-style: italic;
+}
+
+
+/*tabell1*/
+
+table {
+    background:#39AECF;
+    color:#216477;
+}
+
+th, td {
+    background:#FF8100;
+    border: #FFBA73 3px solid;
+}
+
+thead, tbody, tfoot {
+    background: #FF8100;
+    
+    padding: 5px;
 }
 
 
@@ -214,6 +231,26 @@ a {
     min-height: 600px;
     margin-bottom: 10px;
     width:700px;
+}
+
+/*FORMULÄR*/
+
+legend {
+    padding: 0.2em 0.5em;
+    border:1px solid green;
+    background:#FF8100;
+    border: solid 5px #FFBA73;
+    color:#216477; 
+    font-size:90%;
+    text-align:right;
+}
+
+fieldset {
+    margin: 5px;
+    width:25%;
+    background:#FF8100;
+    border: solid 5px #FFBA73;
+    color:#216477; 
 }
 
 .sign {
