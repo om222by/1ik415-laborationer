@@ -179,17 +179,26 @@ thead, tbody, tfoot {
      background:url("pics/omc-logga-xs.png")  top left no-repeat;
 }
 
+#navigation {
+    background-color:#FFBA73;
+    position: relative;
+    float: left;
+    width: 145px;
+    height: 195px;
+    margin-top: 10px;
+}
+
 #navigation li {
-    padding: 0;
-    margin: 7px 5px;
+    margin: 5px 5px;
     list-style:none;
     font-weight: normal;
     font-family:none;
 }
 
 #navigation a:link{
+    height: 35px;
     font-style: normal;
-    padding: 0 5px;
+    padding: 7px 5px 0 28px;
     color:#216477;
     display:block;
     background-color:#FF8100;
@@ -204,15 +213,49 @@ thead, tbody, tfoot {
     display:block;
     color:#FF8100;
 }
+ /*Sprites*/
+#navigation .index {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -46px;
+}
+#navigation li a:hover.index {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px 2px;
+}
 
+#navigation li a.labb {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -140px;
+}
+#navigation li a:hover.labb {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -92px;
+}
 
-#navigation {
-    background-color:#FFBA73;
-    position: relative;
-    float: left;
-    width: 125px;
-    height: 115px;
-    margin-top: 10px;
+#navigation li a.kontakt {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -332px;
+}
+#navigation li a:hover.kontakt {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -284px;
+}
+
+#navigation li a.press {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -236px;
+}
+#navigation li a:hover.press {
+    background-image: url("pics/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 3px -188px;
 }
 
 .active {
