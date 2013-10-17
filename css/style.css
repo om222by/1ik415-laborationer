@@ -42,6 +42,9 @@ table {
 	border-spacig: 0;
 }
 
+html {
+    overflow-y: scroll;
+}
 body{
     background-color:grey;
 }
@@ -170,11 +173,10 @@ thead, tbody, tfoot {
 
 #headerimg {
      margin: -18px 5px 0 -10px;
-     borde: solid 1px black;
      width: 80px;
      height: 60px;
      float: left;
-     background:url("pics/omc-logga-xs.png")  top left no-repeat
+     background:url("pics/omc-logga-xs.png")  top left no-repeat;
 }
 
 #navigation li {
