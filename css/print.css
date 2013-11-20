@@ -23,7 +23,7 @@ time, mark, audio, video {
 }
  /*HTML5 display-role reset for older browsers*/ 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 
@@ -171,7 +171,7 @@ thead, tbody, tfoot {
     overflow:auto;
 }
 
-#header {
+#mainHeader {
     color:#216477;
     border: solid 5px #FFBA73;
     height: 50px;
@@ -188,7 +188,7 @@ thead, tbody, tfoot {
      background:url("pics/omc-logga-xs.png")  top left no-repeat
 }
 
-#navigation li {
+nav li {
     padding: 0;
     margin: 7px 5px;
     list-style:none;
@@ -196,7 +196,7 @@ thead, tbody, tfoot {
     font-family:none;
 }
 
-#navigation a:link{
+nav a:link{
     font-style: normal;
     padding: 0 5px;
     color:#216477;
@@ -204,17 +204,17 @@ thead, tbody, tfoot {
     background-color:#FF8100;
 }
 
-#navigation a:visited {
+nav a:visited {
     color:#216477;
 }
 
-#navigation a:hover{
+nav a:hover{
     background-color:#216477;
     display:block;
     color:#FF8100;
 }
 
-#navigation {
+nav {
     display: none;
     background-color:#FFBA73;
     position: relative;
@@ -269,7 +269,7 @@ fieldset {
     clear: both;
 }
 
-#footer {
+footer {
     color:#216477;
     background-color:#FF8100;
     border: solid 5px #FFBA73;

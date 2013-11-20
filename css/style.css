@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
  /*HTML5 display-role reset for older browsers*/ 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 
@@ -159,7 +159,7 @@ thead, tbody, tfoot {
 
 
 
-#header {
+#mainHeader {
     color:#216477;
     border: solid 5px #FFBA73;
     height: 50px;
@@ -175,7 +175,7 @@ thead, tbody, tfoot {
      background:url("pics/omc-logga-xs.png")  top left no-repeat;
 }
 
-#navigation {
+nav {
     background-color:#FFBA73;
     float: left;
     width: 145px;
@@ -183,14 +183,14 @@ thead, tbody, tfoot {
     margin-top: 10px;
 }
 
-#navigation li {
+nav li {
     margin: 5px 5px;
     list-style:none;
     font-weight: normal;
     font-family:none;
 }
 
-#navigation a:link{
+nav a:link{
     height: 35px;
     font-style: normal;
     padding: 7px 5px 0 28px;
@@ -199,11 +199,11 @@ thead, tbody, tfoot {
     background-color:#FF8100;
 }
 
-#navigation a:visited {
+nav a:visited {
     color:#216477;
 }
 
-#navigation a:hover{
+nav a:hover{
     background-color:#216477;
     display:block;
     color:#FF8100;
@@ -211,45 +211,45 @@ thead, tbody, tfoot {
 
  /*Sprites*/
  
-#navigation .index {
+nav .index {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -46px;
 }
-#navigation li a:hover.index {
+nav li a:hover.index {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px 2px;
 }
 
-#navigation li a.labb {
+nav li a.labb {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -140px;
 }
-#navigation li a:hover.labb {
+nav li a:hover.labb {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -92px;
 }
 
-#navigation li a.kontakt {
+nav li a.kontakt {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -332px;
 }
-#navigation li a:hover.kontakt {
+nav li a:hover.kontakt {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -284px;
 }
 
-#navigation li a.press {
+nav li a.press {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -236px;
 }
-#navigation li a:hover.press {
+nav li a:hover.press {
     background-image: url("pics/sprite.png");
     background-repeat: no-repeat;
     background-position: 3px -188px;
@@ -260,10 +260,10 @@ thead, tbody, tfoot {
     text-align: right;
 }
 
-#content ol{
+main ol{
     padding-left:30px;
 }
-#content {
+main {
     background-color:white;
     float:left;
     margin-top: 10px;
@@ -294,15 +294,21 @@ fieldset {
 }
 
 .sign {
+    color: black;
+    background-color: white;
+    border: none;
+    height: auto;
+    padding-top: 0;
     text-align:right;
     font-style: italic;
     font-family: Comic sans ms;
     font-size: small;
     clear: both;
+    font-weight: normal;
 }
 
 
-#footer {
+footer {
     color:#216477;
     background-color:#FF8100;
     border: solid 5px #FFBA73;
@@ -319,7 +325,7 @@ fieldset {
     width: 100%;
 }
 
-#header {
+#mainHeader {
     padding: 10px 8px;
     text-align: center;
     height: 60%;
@@ -330,18 +336,18 @@ fieldset {
     display: none;
 }
 
-#navigation a {
+nav a {
     width: 90%;
 }
 
-#navigation {
+nav {
     margin: 5px 0;
     width:98.5%;
     clear: both;
     max-width: 480px;
 }
 
-#content {
+main {
     margin: 3px;
     clear: left;
     width: 89%;
@@ -359,7 +365,7 @@ fieldset {
 }
 
 
-#footer {
+footer {
     margin-bottom: 5px;
     padding: 8px;
     width: 91.5%;

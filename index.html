@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html>
     
 <head>
@@ -9,56 +8,81 @@
     <link rel="stylesheet"  href="css/style.css" type="text/css" media="screen">
     <link rel="stylesheet"  href="css/print.css" type="text/css" media="print">
     <link rel="shortcut icon" href="css/pics/omc-logga-liten.ico">
+    
+    <script> 
+        document.createElement("header"); 
+        document.createElement("hgroup"); 
+        document.createElement("footer"); 
+        document.createElement("article"); 
+        document.createElement("main"); 
+        document.createElement("section"); 
+        document.createElement("nav"); 
+        document.createElement("aside"); 
+        document.createElement("address"); 
+    </script>
 </head>
 
 <body>
 
 <div id="container">
 
-    <div id="header">
+    <header id="mainHeader">
         <div id="headerimg"></div>
         <h1>Oscar Med C:s awesome sida!</h1>   
-    </div>
+    </header>
     
-    <div id="navigation">
+    <nav>
         <ul id="menu">
             <li><a class="active index" href="index.html">Index</a></li>
             <li><a class="labb" href="pages/laborationer.html">Laborationer</a></li>
             <li><a class="press" href="pages/presentation.html">Presentation</a></li>
             <li><a class="kontakt" href="pages/kontakt.html">Kontakt</a></li>
         </ul>
-    </div>
+    </nav>
     
-    <div id="content">
-        <h2>Blogg, för att det är kul?</h2>
+    <main>
+        <header>
+            <h2>Blogg, för att det är kul?</h2>
+        </header>
         
-        <h3>Uppgift 4.1</h3>
-        
+        <article>
+        <header>
+            <h3>Uppgift 4.1</h3>
+        </header>
         <p>I denna uppgiften skulle vi göra en mobilanpassad version av sidan och då tog jag bort
         loggan i headern och sen förstorade menyn och centrerade den och detta gjorde jag för att 
         skulle vara lättare att använda i mobilen. </p>
         <p>Här nedan kan ni se en skärmdump från min mobil.</p>
-        <img src="pics/mobil.png" width="270" height="480">
+        <figure>
+            <img src="pics/mobil.png" width="270" height="480">
+        </figure>
+        <footer class="sign">Skrivet av Oscar, 2013-11-19</footer>
+        </article>
         
-        <p class="sign">Skrivet av Oscar, 2013-11-19</p>
+        <article>
+            <header>
+                <h3>Uppgift 3.3</h3>
+            </header>
+            <p>Vi fick i uppgift att efter en bild skapa en likadan hemsida.
+            <a href="https://c9.io/om222by/uppgift-3-3/workspace/index.html" target="_blank">Här</a>
+            är resultatet.</p>
+            <footer class="sign">Skrivet av Oscar, 2013-10-18</footer>
+        </article>
         
-        <h3>Uppgift 3.3</h3>
         
-        <p>Vi fick i uppgift att efter en bild skapa en likadan hemsida. 
-        <a href="https://c9.io/om222by/uppgift-3-3/workspace/index.html" target="_blank">Här</a>
-        är resultatet.</p>
-        
-        <p class="sign">Skrivet av Oscar, 2013-10-18</p>
-        
-        <h3>Uppgift 2.7</h3>
-        
+        <article>
+            <header>
+                <h3>Uppgift 2.7</h3>
+            </header>
         <p>Lorem ipsum dolor sit amet, consectetuer 
         adipiscing elit, sed diam nonummy nibh euismod 
         tincidunt ut laoreet dolore magna aliquam erat volutpat. 
         Ut wisi enim ad minim veniam, quis 
-        <a href="http://www.youtube.com/watch?v=tbEvyBAywck" target="_blank">
-        <img src="pics/al-logga.png" width="200px" height="150px" class="left">
-        </a>
+        <figure>
+            <a href="http://www.youtube.com/watch?v=tbEvyBAywck" target="_blank">
+                <img src="pics/al-logga.png" width="200px" height="150px" class="left">
+            </a>
+        </figure>
         nostrud exerci tation 
         ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
         consequat. Duis autem vel eum iriure dolor in hendrerit in 
@@ -81,10 +105,13 @@
         nobis videntur parum clari, fiant sollemnes in futurum.</p>
         
         
-        <p class="sign">Skrivet av Oscar, 2013-10-06</p>
+        <footer class="sign">Skrivet av Oscar, 2013-10-06</footer>
+        </article>
         
-        <h3>Uppgift 1.7</h3>    
-        
+        <article>
+            <header>
+                <h3>Uppgift 1.7</h3>
+            </header>
         <p>Här är VIDEO från <a target="_blank" href="http://www.bigbuckbunny.org/index.php/trailer-page/" target="_blank">
         Big Buck Bunny</a>!!!!</p>
         
@@ -93,16 +120,22 @@
             Your browser does not support the video tag.
         </video>
         
-        <p class="sign">Skrivet av Oscar, 2013-09-16</p>
+        <footer class="sign">Skrivet av Oscar, 2013-09-16</footer>
+        </article>
         
-        <h3>Uppgift 1.6</h3>    
+        <article>
+            <header>
+                <h3>Uppgift 1.6</h3>
+            </header>
+            <a href="pages/laborationer.html#swag">Här är en bildlänk</a>
         
-        <a href="pages/laborationer.html#swag">Här är en bildlänk</a>
+            <footer class="sign">Skrivet av Oscar, 2013-09-16</footer>
+        </article>
         
-        <p class="sign">Skrivet av Oscar, 2013-09-16</p>
-        
-        <h3>Början på allvaret!</h3>
-            
+        <article>
+            <header>
+                <h3>Början på allvaret!</h3>
+            </header>
             <p> Ps. Här finns kommentarer gömda. Ds.</p>
             <!--
             1.4.1: "www.server.se/html/pages/bottom.html"
@@ -115,15 +148,18 @@
         <p>
             Denna blogg är till för att redogöra lite smått för mina laborationer samt publicera material som jag producerar.
         </p>
-            <img src="pics/CtA.png" alt="CtA Logga">
-        <p class="sign">Skrivet av Oscar, 2013-09-16</p> 
-    </div>
+            <figure>
+                <img src="pics/CtA.png" alt="CtA Logga">
+            </figure>
+        <footer class="sign">Skrivet av Oscar, 2013-09-16</footer> 
+        </article>
+    </main>
         
-    <div id="footer">
+    <footer>
         <p>
             Ansvarig för materialet på denna sida är Oscar Magnfält
         </p>
-    </div>
+    </footer>
 </div>   
 </body>    
     
