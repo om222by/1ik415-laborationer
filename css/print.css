@@ -280,4 +280,8 @@ footer {
     clear:left;
 }
 
+.vcard {
+    display: none;
+}
+
 

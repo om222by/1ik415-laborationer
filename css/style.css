@@ -307,6 +307,15 @@ fieldset {
     font-weight: normal;
 }
 
+aside {
+    border: 3px solid #39AECF;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    clear: both;
+    color:#216477;
+    background-color:#FF8100;
+}
 
 footer {
     color:#216477;
@@ -318,6 +327,8 @@ footer {
     text-align: center;
     clear:left;
 }
+
+
 
 @media only screen and (max-width : 481px) {
 #container {
