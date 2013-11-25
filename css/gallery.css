@@ -1,0 +1,108 @@
+body {
+    background: #777;   
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    z-index: 10;
+    box-shadow: 10px 10px 5px #000;
+    transition:All .2s ease;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
+
+a img {
+    width: inherit;
+}
+
+
+a:nth-child(3n) {
+    -webkit-transform: rotate(-5deg) scale(1) translate(10px);
+    -moz-transform: rotate(-5deg) scale(1) translate(10px);
+    -o-transform: rotate(-5deg) scale(1) translate(10px);
+    -ms-transform: rotate(-5deg) scale(1) translate(10px);
+    transform: rotate(-5deg) ;
+    border: solid red 5px;
+}
+
+a:nth-child(5n) {
+    -webkit-transform: rotate(10deg) scale(1) translate(10px);
+    -moz-transform: rotate(10deg) scale(1) translate(10px);
+    -o-transform: rotate(10deg) scale(1) translate(10px);
+    -ms-transform: rotate(10deg) scale(1) translate(10px);
+    transform: rotate(10deg) ;
+    border: solid green 5px;
+}
+
+a:hover {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/*a:nth-child(2n+0) {
+    border: 5px dotted black;
+    /*-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    transform: rotate(4deg) scale(1) skew(1deg) translate(10px);*/
+/*}*/
+
+
+
+/* ELINS kod
+.image {
+    width: 190px;
+    margin: 0 -30px;
+}
+
+#content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Patrick Hand SC', cursive;
+    background: #FFF;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    z-index: 0;
+    box-shadow: 3px 3px 10px #444;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+}
+
+#content a img {
+    width: inherit;
+}.image {
+    width: 190px;
+    margin: 0 -30px;
+}
+
+#content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Patrick Hand SC', cursive;
+    background: #FFF;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    z-index: 0;
+    box-shadow: 3px 3px 10px #444;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+}
+
+#content a img {
+    width: inherit;
+} */
